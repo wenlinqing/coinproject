@@ -1,0 +1,100 @@
+{
+	"pages": [
+		{
+			"path": "pages/assets/index",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/assets/record",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"style": {
+					"navigationStyle": "custom",
+					"app-plus": {
+					    "scrollIndicator":"none"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/login/regist",
+			"style": {
+				"navigationBarTitleText": "",
+				"style": {
+					"navigationStyle": "custom",
+					"app-plus": {
+					    "scrollIndicator":"none"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/login/registStepOne",
+			"style": {
+				"navigationBarTitleText": ""
+				// "style": {
+				// 	"navigationStyle": "custom",
+				// 	"app-plus": {
+				// 	    "scrollIndicator":"none"
+				// 	}
+				// }
+			}
+		},
+		{
+			"path": "pages/login/registArea",
+			"style": {
+				"navigationBarTitleText": "居住国/地区"
+			}
+		},
+		{
+			"path": "pages/login/registStepTwo",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/login/registStepThree",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#ffff",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"softinputNavBar": "none"
+		}
+		// "navigationStyle": "custom",
+		// "app-plus": {
+		// 	"background": "#FEFAF6",
+		// 	"scrollIndicator":"none"
+		// }
+	}
+}
