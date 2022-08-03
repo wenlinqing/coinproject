@@ -19,7 +19,7 @@
 			
 			
 		</uni-forms> -->
-		<button class="mt10" @click="navTo('/pages/login/registStepOne')" style="background: #EAECEF;">使用手机或邮箱注册</button>
+		<button class="mt10" @click="navTo('/pages/login/registStepTwo')" style="background: #EAECEF;">使用邮箱注册</button>
 		<DividingLine></DividingLine>
 		<button class="mt10" style="background:#000;color:#fff">
 			<image class="loginIcon" src="@/static/images/icon1.png" mode="aspectFit"></image>通过Apple 继续
@@ -42,30 +42,30 @@
 		data() {
 			return {
 				act: 1,
-				formData: {
-					email: '',
-					password: '',
-				},
-				rules: {
-					// 对email字段进行必填验证
-					email: {
-						rules: [{
-								required: true,
-								errorMessage: '请输入邮箱',
-							},
-							{
-							format: 'email',
-							errorMessage: '请输入正确的邮箱地址',
-						}]
-					},
-					password: {
-						rules: [{
-								required: true,
-								errorMessage: '请输入密码',
-							}
-						]
-					},
-				}
+				// formData: {
+				// 	email: '',
+				// 	password: '',
+				// },
+				// rules: {
+				// 	// 对email字段进行必填验证
+				// 	email: {
+				// 		rules: [{
+				// 				required: true,
+				// 				errorMessage: '请输入邮箱',
+				// 			},
+				// 			{
+				// 			format: 'email',
+				// 			errorMessage: '请输入正确的邮箱地址',
+				// 		}]
+				// 	},
+				// 	password: {
+				// 		rules: [{
+				// 				required: true,
+				// 				errorMessage: '请输入密码',
+				// 			}
+				// 		]
+				// 	},
+				// }
 			}
 		},
 		methods: {

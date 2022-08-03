@@ -1,12 +1,12 @@
 <template>
 <view class="container">
-	<view class="title">手机验证</view>
+	<view class="title">邮箱验证</view>
 	<view class="text mb10 font12">
-		请输入您在手机号码 +852-6678942 收到的6位验证码，验证码30分钟有效
+		请输入您在邮箱m8526678942@163.com 收到的6位验证码，验证码30分钟有效
 	</view>
 	
 	<uni-forms ref="form" :rules="rules" :modelValue="formData" label-position="top" :label-width="100">
-		<uni-forms-item name="code" label="手机验证码" style="position: relative;">
+		<uni-forms-item name="code" label="邮箱验证码" style="position: relative;">
 			<uni-easyinput placeholder="请输入验证码" v-model="formData.code"/>
 			<view class="clickDiv font12 flex flexcenter flex_ac" >验证码已发送 
 			<image src="@/static/images/notice.png" mode="widthFix"></image></view>

@@ -6,7 +6,7 @@
 			<view :style="{ color: themeColor,backgroundColor: themeBgColor ,height:navbarHeight}"
 				class="uni-navbar__header">
 				<view @tap="onClickLeft" class="uni-navbar__header-btns uni-navbar__header-btns-left"
-					:style="{width:leftIconWidth}">
+					:style="{width:leftIconWidth}" v-if="isLeft">
 					<slot name="left">
 						<view class="uni-navbar__content_view" v-if="leftIcon.length > 0">
 							<uni-icons :color="themeColor" :type="leftIcon" size="20" />
@@ -26,7 +26,7 @@
 					</slot>
 				</view>
 				<view @click="onClickRight" class="uni-navbar__header-btns uni-navbar__header-btns-right"
-					:style="{width:rightIconWidth}">
+					:style="{width:rightIconWidth}"  v-if="isRight">
 					<slot name="right">
 						<view v-if="rightIcon.length">
 							<uni-icons :color="themeColor" :type="rightIcon" size="22" />
@@ -84,6 +84,10 @@
 				type: String,
 				default: ""
 			},
+			isLeft:{
+				type: Boolean,
+				default: true
+			},
 			leftText: {
 				type: String,
 				default: ""
@@ -99,6 +103,10 @@
 			rightIcon: {
 				type: String,
 				default: ""
+			},
+			isRight:{
+				type: Boolean,
+				default: true
 			},
 			fixed: {
 				type: [Boolean, String],

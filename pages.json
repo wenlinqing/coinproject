@@ -1,7 +1,8 @@
 {
 	"pages": [
+		
 		{
-			"path": "pages/assets/index",
+			"path": "pages/index/index",
 			"style": {
 				"navigationStyle": "custom",
 				"app-plus": {
@@ -10,12 +11,19 @@
 			}
 		},
 		{
-			"path": "pages/index/index",
+			"path": "pages/finances/index",
 			"style": {
-				"navigationStyle": "custom",
-				"app-plus": {
-				    "scrollIndicator":"none"
-				}
+				"navigationBarTitleText": "理财"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				// "navigationStyle": "custom",
+				// "app-plus": {
+				//     "scrollIndicator":"none"
+				// }
+				"navigationBarTitleText": "我的"
 			}
 		},
 		{
@@ -29,6 +37,18 @@
 		},
 		{
 			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"style": {
+					"navigationStyle": "custom",
+					"app-plus": {
+					    "scrollIndicator":"none"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/login/resetPwd",
 			"style": {
 				"navigationBarTitleText": "",
 				"style": {
@@ -80,8 +100,199 @@
 			"style": {
 				"navigationBarTitleText": ""
 			}
+		},
+		{
+			"path": "pages/assets/index",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/finances/transRecord",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/finances/locking",
+			"style": {
+				"navigationBarTitleText": "锁仓"
+			}
+		},
+		{
+			"path": "pages/finances/earnCoins",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/finances/handleAssets",
+			"style": {
+				"navigationBarTitleText": "资产"
+			}
+		},
+		{
+			"path": "pages/finances/handleAssetsBack",
+			"style": {
+				"navigationBarTitleText": "赎回"
+			}
+		},
+		{
+			"path": "pages/finances/subscriptionList",
+			"style": {
+				"navigationBarTitleText": "申购列表"
+			}
+		},
+		{
+			"path": "pages/finances/subscription",
+			"style": {
+				"navigationBarTitleText": "申购"
+			}
+		},
+		{
+			"path": "pages/mine/notify",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/setUp",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/language",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/security",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/securityPwd",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/securityDigit",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/transfer",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/choseWallet",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/choseCoin",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/transferRecord",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/withdraw",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/withdrawFrom",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/withdrawRecord",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/deposit",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/mine/depositFrom",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+				    "scrollIndicator":"none"
+				}
+			}
 		}
-		
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -96,5 +307,35 @@
 		// 	"background": "#FEFAF6",
 		// 	"scrollIndicator":"none"
 		// }
+	},
+	"tabBar": {
+		"color": "#808A98",
+		"selectedColor": "#E6B00B",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "#FEF9F1",
+		"fontSize":"12px",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/footer/nav1_off.png",
+				"selectedIconPath": "static/images/footer/nav1_off.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/finances/index",
+				"iconPath": "static/images/footer/nav2_off.png",
+				"selectedIconPath": "static/images/footer/nav2_on.png",
+				"text": "理财"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"iconPath": "static/images/footer/nav3_off.png",
+				"selectedIconPath": "static/images/footer/nav3_on.png",
+				"text": "我的"
+			}
+		]
 	}
 }
+// git token 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
+
+// https://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@github.com/wenlinqing/coinproject.git
